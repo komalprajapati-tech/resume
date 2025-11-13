@@ -1,0 +1,531 @@
+html {
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    /* options: auto, thin, none */
+    scrollbar-color: #888 #f1f1f1;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #000;
+    background-color: #dae5f3;
+}
+
+.header {
+    color: #D6B9FC;
+    background-color: #dae5f3;
+    width: 100vw;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    border-bottom: 2px solid rgb(49, 51, 97);
+
+}
+
+.komal {
+    width: 40%;
+    text-align: center;
+}
+
+.komal a {
+    font-family: sans-serif;
+    text-decoration: none;
+    color: rgb(44, 40, 40);
+    position: absolute;
+    left: 10px;
+    top: 20px;
+}
+
+.k {
+    color: brown;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+}
+
+.navbar {
+    width: 60%;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    /* justify-content: space-evenly; */
+    align-items: flex-end;
+
+    /* text-align: right; */
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    font-size: x-large;
+    margin: 20px;
+    color: rgb(44, 40, 40);
+}
+
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+    text-decoration-style: solid;
+    color: #13619c;
+}
+
+.navbar ul li a:active {
+    color: white;
+}
+
+/* .navbar ul li a:visited{
+    color: white;
+} */
+
+.home {
+    height: 100vh;
+    width: 100vw;
+    background-color: #dae5f3;
+    /* color: #D6B9FC; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.content {
+    height: 200px;
+    width: 400px;
+    margin: 50px;
+
+}
+
+.photo {
+    height: 400px;
+    width: 400px;
+
+}
+
+.photo img:hover {
+    /* transform: scale(1.1); */
+    /* opacity: 0; */
+    transform: translateY(50px);
+    animation: moveUp 1s ease-out forwards;
+    animation-delay: 0.3s;
+    /* wait before animation */
+}
+
+@keyframes moveUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.photo img {
+    height: 400px;
+    width: 300px;
+    background-size: cover;
+    border: 5px solid white;
+    box-shadow: #332c3c;
+    /* border-radius: 10px; */
+    box-shadow: 5px 5px 15px rgb(161, 158, 158);
+}
+
+.content h1 {
+    /* text-align: center; */
+    color: rgb(49, 51, 97);
+}
+
+.content p {
+    /* text-align: center; */
+    color: rgb(18, 15, 35);
+}
+
+.content h2 {
+    padding-top: 20px;
+    color: rgb(49, 51, 97);
+    text-align: left;
+}
+
+
+#section1 {
+    scroll-margin-top: 80px;
+}
+
+
+#section2 {
+    height: 100vh;
+    width: 100vw;
+    scroll-margin-top: 80px;
+}
+
+#section3 {
+    height: 100vh;
+    width: 100vw;
+    background-color: #dae5f3;
+    /* border-bottom: 2px solid white; */
+    scroll-margin-top: 80px;
+}
+
+#section4 {
+    height: 100vh;
+    width: 100vw;
+    background-color: #dae5f3;
+    scroll-margin-top: 80px;
+}
+
+/* ------------------------------------------------------------------------------------------------ */
+
+
+.about {
+    height: 100vh;
+    width: 100vw;
+    background-color: #dae5f3;
+
+    /* padding-top: 50px; */
+    display: flex;
+
+
+
+
+
+}
+
+.aboutme {
+    /* margin-top: 100px; */
+    /* padding-top: 300px; */
+    color: rgb(222, 219, 239);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+    height: 100vh;
+    width: 400px;
+    background-color: rgb(18, 15, 35);
+    /* border-radius: 10px; */
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-bottom: 30px; */
+    /* border: 2px solid white; */
+
+}
+
+span {
+    color: rgb(18, 15, 35);
+    font-size: large;
+    font-style: bold;
+}
+
+
+.personal {
+    color: rgb(18, 15, 35);
+    font-size: large;
+}
+
+.content2 {
+    height: 80%;
+    width: 700px;
+    /* text-align: center; */
+    color: rgb(49, 51, 97);
+    font-size: xx-large;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 100px;
+    margin-top: 50px;
+    background-color: #dae5f3;
+    box-shadow: 5px 5px 15px rgb(161, 158, 158);
+    padding: 30px;
+
+}
+
+
+/* ------------------------------------------------------------------------------------------------------ */
+.myskills {
+    /* margin-top: 40px; */
+    color: rgb(18, 15, 35);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+    height: 70px;
+    width: 100vw;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 30px;
+    border: 2px solid white;
+}
+
+
+.skills {
+    border-top: 2px solid white;
+    /* border-bottom: 2px solid white; */
+    background-color: #dae5f3;
+}
+
+.skills-container {
+    max-width: 800px;
+    margin: 100px;
+    margin-left: 400px;
+    /* background: transparent; */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.skill {
+    margin-bottom: 25px;
+}
+
+.skill-name {
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: rgb(18, 15, 35);
+}
+
+.progress-bar {
+    width: 100%;
+    background: #e0e0e0;
+    border-radius: 25px;
+    overflow: hidden;
+    height: 18px;
+}
+
+.progress {
+    height: 100%;
+    width: 0;
+    /* start empty */
+    border-radius: 25px;
+    text-align: right;
+    color: rgb(18, 15, 35);
+    font-size: 12px;
+    line-height: 18px;
+    padding-right: 10px;
+    transition: width 1.5s ease-in-out;
+}
+
+.html {
+    background: linear-gradient(90deg, #ff6b00, #f8b400);
+}
+
+.css {
+    background: linear-gradient(90deg, #007bff, #00c6ff);
+}
+
+.js {
+    background: linear-gradient(90deg, #ffea00, #f39c12);
+    color: #000;
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------ */
+
+.contact {
+    /* padding-top: 1000px; */
+    display: flex;
+    justify-content: center;
+}
+
+.contact-container {
+    max-width: 100%;
+    height: 400px;
+    margin: 100px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    padding-top: 50px;
+    border-radius: 15px;
+    /* backdrop-filter: blur(10px); */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    /* text-align: center; */
+
+}
+
+.contact-con p {
+    color: rgb(18, 15, 35);
+    font-size: larger;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+p {
+    color: #e0e0e0;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+.links {
+    height: 300px;
+}
+
+.links a {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 25px;
+    background: rgba(64, 130, 168, 0.2);
+    color: rgb(24, 24, 55);
+    text-decoration: none;
+    /* border-radius: 25px; */
+    transition: 0.3s;
+    font-weight: 500;
+    gap: 20px;
+    width: 400px;
+}
+
+.links a:hover {
+    background: white;
+    color: #00587a;
+    transform: scale(1.05);
+}
+
+/* -------------responsive------------------------------------------------------------------------------------------------------- */
+/* ===== Responsive Design ===== */
+
+/* 🌐 Perfect Responsive Design (Only affects smaller screens) */
+
+/* For tablets and below */
+@media (max-width: 1024px) {
+  .header {
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 10px 0;
+  }
+
+  .komal {
+    order: -1; /* Moves name above navbar */
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+
+  .komal a {
+    position: static;
+  }
+
+  .komal a h1 {
+    font-size: 32px;
+  }
+
+  .navbar {
+    width: 100%;
+  }
+
+  .navbar ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .navbar ul li {
+    margin: 8px 12px;
+  }
+
+  .navbar ul li a {
+    font-size: 20px;
+  }
+
+  /* Section adjustments */
+  .home, .about, .skills, .contact {
+    height: auto;
+    flex-direction: column;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .photo {
+    width: 280px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .photo img {
+    width: 100%;
+    height: auto;
+  }
+
+  .content {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .content h1 {
+    font-size: 28px;
+  }
+
+  .content p {
+    font-size: 22px;
+  }
+
+  .content h2 {
+    font-size: 18px;
+  }
+
+  .aboutme {
+    display: none; /* Hide side banner text for cleaner mobile layout */
+  }
+
+  .content2 {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 18px;
+  }
+
+  .skills-container {
+    margin: 0 auto;
+    width: 90%;
+    box-shadow: none;
+  }
+
+  .links a {
+    width: 90%;
+    font-size: 16px;
+  }
+}
+
+/* For small mobiles */
+@media (max-width: 600px) {
+  .komal a h1 {
+    font-size: 26px;
+  }
+
+  .navbar ul li a {
+    font-size: 16px;
+    margin: 4px 8px;
+  }
+
+  .photo {
+    width: 220px;
+  }
+
+  .content h1 {
+    font-size: 22px;
+  }
+
+  .content p {
+    font-size: 18px;
+  }
+
+  .content h2 {
+    font-size: 14px;
+  }
+
+  .links a {
+    font-size: 14px;
+    padding: 10px;
+  }
+}

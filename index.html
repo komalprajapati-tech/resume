@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script> -->
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+
+<body>
+    <div class="header">
+        <div class="komal"><a href="">
+                <h1 style="font-size: xx;"><span class="k">K</span>omal Prajapati</h1>
+            </a></div>
+        <div class="navbar">
+            <ul>
+                <li><a href="#section1">Home</a></li>
+                <li><a href="#section2">About</a></li>
+                <li><a href="#section3">Skills</a></li>
+                <li><a href="#section4">Contact</a></li>
+            </ul>
+
+
+        </div>
+    </div>
+
+    <!-- ------------------------------------------------------------------------------------------------------------------------- -->
+
+    <div id="section1" class="home">
+
+
+        <div class="photo">
+            <img src="Komal.jpg" alt="image not found">
+        </div>
+
+        <div class="content">
+            <h1>Hello, I am</h1>
+            <p style="font-size: 50px">Komal prajapati</p>
+            <h2>A passionate BCA student exploring the world of web development.
+                I love turning ideas into interactive and visually appealing websites.</h2>
+        </div>
+    </div>
+    <!-- ------------------------------------------------------------------------------------------------------------------------------- -->
+
+    <div id="section2" class="about">
+
+        <div class="aboutme">About me</div>
+
+        <div class="content-trans">
+            <div class="content2">
+                <p class="personal"><span>BIRTHDAY:</span>5 April 2006</p>
+                <p class="personal"><span>MARITAL:</span>UNMARRIED</p>
+                <p class="personal"><span>NATIONALITY:</span>INDIAN</p>
+                <p class="personal"><span>PHONE:</span>+91 9316945843</p>
+                <p class="personal"><span>EMAIL:</span>KOMALPRAJAPATI112006@GMAIL.COM</p>
+
+
+
+
+
+                I'm a Bachelor of Computer Applications (BCA) student with a strong interest in web technologies.
+                I enjoy designing responsive websites, and learning new tools that improve user
+                experience.
+
+                My goal is to become a web developer and contribute to real-world projects that make a
+                difference.
+
+            </div>
+
+        </div>
+        <!-- ---------------------------------------------------------------------------------------------------------------------------------- -->
+
+    </div>
+    <div id="section3" class="skills">
+        <div class="myskills">My Skills</div>
+        <div class="skills-container">
+
+
+            <div class="skill">
+                <div class="skill-name">HTML</div>
+                <div class="progress-bar">
+                    <div class="progress html" data-progress="90">90%</div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-name">CSS</div>
+                <div class="progress-bar">
+                    <div class="progress css" data-progress="50">50%</div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-name">JavaScript</div>
+                <div class="progress-bar">
+                    <div class="progress js" data-progress="30">30%</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        // JavaScript to animate bars when the page loads
+        const progressBars = document.querySelectorAll('.progress');
+
+        window.addEventListener('load', () => {
+            progressBars.forEach(bar => {
+                const value = bar.getAttribute('data-progress');
+                bar.style.width = value + '%';
+            });
+        });
+    </script>
+    <!-- ------------------------------------------------------------------------------------------------------------------------- -->
+
+    <hr style="background-color: rgb(215, 208, 208);">
+    <div id="section4" class="contact">
+
+        <div class="contact-container">
+
+
+
+            <div class="contact-con">
+                <p>You can connect with me through any of the platforms below 👇</p>
+            </div>
+
+            <div class="links">
+                <a href="https://instagram.com/yourid" target="_blank"><i
+                        class="fa-brands fa-instagram">_.komal_.056</i></a><br>
+                <a href="https://wa.me/yourwhatsappnumber" target="_blank"><i
+                        class="fa-brands fa-square-whatsapp">+91_9316945843</i></a><br>
+                <a href="https://github.com/yourgithub" target="_blank"><i
+                        class="fa-brands fa-github">komalprajapati_tech</i></a><br>
+                <a href="mailto:youremail@gmail.com"><i
+                        class="fa-solid fa-envelope">komalprajapati112006@gmail.com</i></a><br>
+            </div>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
